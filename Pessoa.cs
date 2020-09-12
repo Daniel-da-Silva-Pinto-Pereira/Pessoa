@@ -1,4 +1,4 @@
-using System;
+ using System;
 /*Crie uma classe que modele uma pessoa:
 
 Atributos: nome, idade, peso e altura
@@ -10,21 +10,36 @@ class  pessoa {
 	public int idade;
 	public double peso, altura;
 
-	public void envelhecer(int ano){
+  public void mostra (string n, int i, double p,double a){
+  nome = n;
+  idade = i;
+  peso = p;
+  altura = a;
+  }
+
+  public void dados(){
+  Console.WriteLine("Nome: {0}, idade: {1}, peso: {2}, altura: {3}", nome, idade, peso, altura);
+  }
+
+	public void envelhecer(int atual){
 
     if (idade < 21) {
-      altura += ano*0.5;
+      altura += idade*0.005-0.04;
+      idade += atual;
+      
     }
   }
-  public int envelhecer(){
-    return idade;
+  public int retornarenvelhecer(){
+    
+    return idade ;
+
   }
   
   public void engordar(double ganho_de_peso){
     peso += ganho_de_peso; 
   }
 
-  public double retorna_engordar(){
+  public double retornar_engordar(){
     return peso;
   }
 
