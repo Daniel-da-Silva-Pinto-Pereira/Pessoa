@@ -20,7 +20,7 @@ class  pessoa {
     return idade;
   }
   
-  public double engordar(double ganho_de_peso){
+  public void engordar(double ganho_de_peso){
     peso += ganho_de_peso; 
   }
 
@@ -28,7 +28,7 @@ class  pessoa {
     return peso;
   }
 
-  public double emagrecer(double peso_perdido){
+  public void emagrecer(double peso_perdido){
     peso -= peso_perdido; 
   } 
 
@@ -36,7 +36,7 @@ class  pessoa {
     return peso;
   }
 
-  public double crescer(double ganho_de_altura){
+  public void crescer(double ganho_de_altura){
     altura += ganho_de_altura;
   }
 
