@@ -6,9 +6,9 @@ Métodos: Envelhercer, engordar, emagrecer, crescer. Obs: Por padrão, a cada an
 
 class  pessoa {
 	
-	public string nome;
-	public int idade;
-	public double peso, altura;
+	private string nome;
+	private int idade;
+	private double peso, altura;
 
   public void mostra (string n, int i, double p,double a){
   nome = n;
